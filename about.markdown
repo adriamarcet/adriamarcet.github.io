@@ -1,18 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Quién
+permalink: /quien/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Esta es mi página donde podéis encontrar mis escritos, mis ideas y mis quejas. Me gusta mucho todo lo que sea estar con mi família, el mundo de la ecología, la paternidad, los comics, videojuegos, desarrollo web, música y estar en cualquier sitio cerca de la naturaleza. Así que seguramente todo eso es lo que podréis leer en mis publicaciones. Cualquier cosa que pueda hacerme cambiar de ideas será bienvenida: [adriamarcet](https://twitter.com/adriamarcet)
