@@ -4,8 +4,6 @@ title:  "Embutida"
 date:   2020-05-14 12:05:39 +0100
 ---
 
-<h2>{{ page.title }}</h2>
-
 – ¿Estás loca o qué?
 
 – ¿Cómo? No ¿por qué lo dices?
