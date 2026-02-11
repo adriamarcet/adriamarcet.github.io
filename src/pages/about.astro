@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro'
+const pageTitle = 'About me';
+
+const skills = [
+  'HTML',
+  'CSS, Sass/SCSS',
+  'Web Accessibility',
+  'Javascript, React',
+  'Twig & PHP',
+  'Figma, Sketch and Design Tools',
+  'NPM and Build Tools',
+  'Scrum and Agile methodologies'
+]
+
+const colorOrange = '#f29d00';
+---
+<style define:vars={{colorOrange}}>
+    .color-orange {
+        color: var(--colorOrange);
+    }
+</style>
+
+<Layout pageTitle={pageTitle}>
+    <article>
+        <header>
+            <h1 class="color-orange">Adrià Marcet Rovira</h1>
+        </header>
+
+        <div>
+            <p>A front-end developer specializing in accessibility, usability and web performance. Skills and experience includes:</p>
+
+            <ul>
+                {skills.map(skill => <li class="skill">{skill}</li>)}
+            </ul>
+
+            <div><h2>Job experience</h2></div>
+
+            <div><p>Front-end developer, Runroom (Barcelona, Spain) – Sep 2017 to Jul 2025.</p></div>
+            <div><p><em> Worked as a front-end developer in a cross functional team. I have developed large web pages with the focus on usability, performance and conversion.</em></p></div>
+
+            <div>
+            <ul>
+                <li>Frontend CRO strategies, performance analysis, and technical debt reduction by refactoring legacy code and modernizing core libraries. <strong>Stack</strong>: HTML5, CSS3, Sass, Scss, JS, jQuery, Gulp, Webpack, ES6, NPM, Babel, Lighthouse, Core Web Vitals.</li>
+            </ul>
+            </div>
+
+            <div>
+            <ul>
+                <li>Architected and modernized internal company templates by migrating legacy archetypes to ReactJS and Typescript, deep-diving into component lifecycles and state management to improve developer velocity. <strong>Stack</strong>: ReactJS, Typescript.</li>
+            </ul>
+            </div>
+
+            <div>
+            <ul>
+                <li>Delivered <del>pixel perfect</del> care for the detail, responsive UI using component-driven development, ensuring cross-browser compatibility across all devices. <strong>Stack</strong>: Storybook, Figma, Sketch, CSS3, HTML5.</li>
+            </ul>
+            </div>
+
+            <div>
+            <ul>
+                <li>Collaborated directly with stakeholders to align business requirements with iterative, incremental delivery, maintaining a strict focus on accessibility and user-centric design. <strong>Tools</strong>: Axe, Figma, Sketch, Miro, Jira, Leankit. Examples: Hospital Clínic, Natura Selection, Clínica Barraquer.</li>
+            </ul>
+            </div>
+
+            <div>
+            <ul>
+                <li>Managed the implementation and validation of structured data for diverse content architectures, significantly boosting search engine visibility (SEO) for high-profile clients. Focused on data integrity and rich snippet optimization. <strong>Stack</strong>: PHP, Symfony, Twig, HTML5, Schema Validator.</li>
+            </ul>
+            </div>
+            <div><p>Frontend developer, Face3Media (Montreal, Canada) – Oct 2015 to Jan 2017.</p></div>
+            <div><ul><li>Delivered high-performance, responsive websites for corporate clients and event sites ensuring cross browser compatibility.</li></ul></div>
+            <div><ul><li>Developed complex SVG animations and interactive components with CSS and Js for digital advertising campaigns.</li></ul></div>
+            <div><ul><li>Optimized and maintained legacy codebases for digital service projects, reducing bug reports and improving site stability.</li></ul></div>
+            <div><p>Localisation Tester, Babel Media - Keywords (Montreal, Canada) – Feb 2015 to Sep 2015.</p></div>
+            <div><ul><li>Ensured linguistic and technical quality for Spanish-localized video games, identifying and documenting UI/UX inconsistencies and translation errors.</li></ul></div>
+            <div><ul><li>Managed database string updates and localized content assets, ensuring visual consistency and proper formatting across different gaming platforms.</li></ul></div>
+            <div><ul><li>Applied a rigorous 'care for detail' approach to regression testing, helping delivery teams maintain high-quality standards for international releases.</li></ul></div>
+            <div><p>Web Designer &amp; Developer, Trendtation - Grupo Intercom (Barcelona) – Apr 2012 to Dec 2012.</p></div>
+            <div><ul><li>Developed responsive layouts and optimized digital assets using HTML5, CSS3, and jQuery, ensuring high performance for a high-traffic social fashion platform.</li></ul></div>
+            <div><ul><li>Implemented modular styles with SASS, focusing on visual consistency and cross-browser compatibility across the site's core features.</li></ul></div>
+            <div><p>Marketing Developer, BeRepublic (Barcelona) – Apr 2011 to Apr 2012.</p></div>
+            <div><ul><li>Developed and optimized high-volume email marketing campaigns and WordPress landing pages, ensuring pixel-perfect rendering across inconsistent email clients and browsers.</li></ul></div>
+            <div><ul><li>Managed end-to-end newsletter technical delivery, using tools like Litmus to guarantee visual consistency and accessibility standards for diverse audiences.</li></ul></div>
+            <div><h2>Education &amp; Continuous Learning</h2></div>
+            <div><ul><li><strong>Full Stack Open (React, Node.js, Redux, MongoDB)</strong> University of Helsinki (Remote), 2025 – Present <em>– Deepening expertise in modern JavaScript frameworks and state management.</em></li></ul></div>
+            <div><ul><li><strong>Administration of Servers, Databases, and Websites</strong> CIFO Barcelona, 2015 <em>– Specialized training in backend infrastructure and database management.</em></li></ul></div>
+            <div><ul><li><strong>Audiovisual Communication (Media Studies)</strong> Universitat de Vic (Barcelona), 2005 - 2009 – <em>Completed 90% of credits, focusing on visual design and digital media.</em></li></ul></div>
+        </div>
+    </article>
+</Layout>

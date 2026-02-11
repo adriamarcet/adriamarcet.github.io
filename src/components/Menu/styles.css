@@ -1,0 +1,22 @@
+.menu {
+  background-color: #0d0950;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.main-menu {
+  display: none;
+}
+:has(.menu[aria-expanded="true"]) .main-menu {
+  display: unset;
+}
+@media screen and (min-width: 636px) {
+  .menu {
+    display: none;
+  }
+  .main-menu {
+    display: block;
+  }
+}
