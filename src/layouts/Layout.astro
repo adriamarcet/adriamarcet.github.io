@@ -3,6 +3,7 @@ import NavigationMenu from '../components/NavigationMenu.astro';
 import '@fontsource-variable/playfair-display';
 import '@fontsource/inter';
 import '../styles/globals.css';
+import '../styles/typography.css';
 import Footer from '../components/Footer.astro';
 const {pageTitle, lang = 'es', bodyClass = ''} = Astro.props;
 ---
@@ -17,7 +18,7 @@ const {pageTitle, lang = 'es', bodyClass = ''} = Astro.props;
 		<title>{pageTitle}</title>
 	</head>
 	<body class={`front-end ${bodyClass}`}>
-		<main>
+		<main class="content">
 			<NavigationMenu />
 			{pageTitle && <h1>{pageTitle}</h1>}
 			<slot />

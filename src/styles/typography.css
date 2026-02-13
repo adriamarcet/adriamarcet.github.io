@@ -1,0 +1,21 @@
+@layer typography {
+  .front-end p {
+    font-family: var(--font-family-body);
+  }
+  .front-end h1,
+  .front-end h2 {
+    font-family: var(--font-family);
+    margin: 0 0 1.5rem 0;
+  }
+  .front-end a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .front-end a:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+}

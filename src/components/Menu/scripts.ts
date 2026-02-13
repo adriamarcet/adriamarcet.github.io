@@ -1,6 +1,6 @@
 if (typeof document !== 'undefined') {
   document.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu') as HTMLElement | null;
+    const menu = document.querySelector('.menu');
 
     menu?.addEventListener('click', () => {
       const isExpanded = menu.getAttribute('aria-expanded') === 'true';

@@ -22,24 +22,13 @@ body {
   padding: 1rem;
   line-height: 1.5;
 }
-
 * {
   box-sizing: border-box;
 }
-
-h1 {
-  margin: 1rem 0;
-  font-size: 2.5rem;
-}
-
 .reader {
   max-width: 68ch;
 }
-
-.front-end h1 {
-  font-family: var(--font-family);
-  margin: 0 0 1.5rem 0;
-}
-.front-end p {
-  font-family: var(--font-family-body);
+.content {
+  max-width: min(100%,1050px);
+  margin-inline: auto;
 }

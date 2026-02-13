@@ -1,0 +1,20 @@
+---
+const {postUrl, pageTitle, date, preview, lang} = Astro.props;
+import Date from '../Date.astro';
+import './styles.css';
+---
+<article class="blog-post">
+    <h2 class="blog-post-title">
+        <a href={postUrl} class="blog-post-link">
+            {pageTitle}
+        </a>
+    </h2>
+    <div>
+        <p>
+            <a href={postUrl}>
+                <Date date={date} lang={lang} />
+            </a>
+        </p>
+        <p class="blog-post-preview">{preview}</p>
+    </div>
+</article>

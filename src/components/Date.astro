@@ -1,0 +1,13 @@
+---
+// Props: `date` (string | Date), optional `lang` (default: 'es'), optional `class` for styling
+const { date, lang = 'es', class: className = '' } = Astro.props;
+const parsed = new Date(date);
+const locale = lang.includes('-') ? lang : `${lang}-ES`;
+const dateOptions = {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+};
+---
+<time datetime={date} class={className}>{parsed.toLocaleDateString(locale, dateOptions)}</time>

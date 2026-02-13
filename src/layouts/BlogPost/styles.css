@@ -2,7 +2,7 @@
     --cerulean: #437C90;
     --dark-slate: #0a1818;
     --beige: #EEEBD3;
-    --dark-goldenrod: #A98743;
+    --dark-goldenrod: #7e5503;
     --tuscan-sun: #F7C548;
 }
 .blog-post-main {
@@ -16,10 +16,9 @@
     margin-top: -0.35rem;
 }
 .blog-post time {
-    background-color: var(--tuscan-sun);
-    color: var(--dark-slate);
+    color: var(--dark-goldenrod);
+    /* color: var(--dark-slate); */
     font-size: small;
     max-width: 80ch;
     text-transform: uppercase;
-    padding: .12rem .18rem;
 }

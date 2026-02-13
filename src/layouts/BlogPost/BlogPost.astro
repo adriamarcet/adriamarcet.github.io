@@ -4,19 +4,13 @@ import Layout from '../Layout.astro';
 import './styles.css';
 
 const lang = frontmatter.lang || 'es';
-const date = new Date(frontmatter.pubDate);
-const dateOptions = { 
-    weekday: 'long', 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
-}
+import Date from '../../components/Date.astro';
 ---
 <Layout lang={lang} bodyClass="blog-post">
     <article>
         <header>
             <div>
-                <time>{date.toLocaleDateString(lang + '-ES', dateOptions)}</time>
+                <Date date={frontmatter.pubDate} lang={lang} />
             </div>
             <h1>{frontmatter.title}</h1>
             <!-- <p class="byline">Written by <span>{frontmatter.author}</span>{frontmatter.date && (<span> • <time datetime={frontmatter.date}>{frontmatter.date}</time></span>)}</p> -->
