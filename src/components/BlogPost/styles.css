@@ -29,6 +29,10 @@
 .blog-post-list-item {
     container-type: inline-size;
 }
+.blog-posts-list {
+    list-style: none;
+    padding: 0;
+}
 /* container query, from 368 px above grid with 2 columns and gap 2.5 aligned center vertically */
 @container (min-width: 680px) {
     .blog-post {

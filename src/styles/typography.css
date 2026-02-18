@@ -1,4 +1,12 @@
 @layer typography {
+  :root {
+    --font-family: 'Playfair Display Variable', system-ui, serif;
+    --font-family-body: 'Inter Variable', system-ui, sans-serif;
+  }
+
+  html {
+    font-family: sans-serif;
+  }
   .front-end p {
     font-family: var(--font-family-body);
   }

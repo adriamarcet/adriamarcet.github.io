@@ -7,12 +7,14 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
+    "postinstall": "cp node_modules/kelpui/js/dark-mode-auto.js public/dark-mode-auto.js"
   },
   "dependencies": {
     "@fontsource-variable/playfair-display": "^5.2.8",
     "@fontsource/inter": "^5.2.8",
-    "astro": "^5.17.1"
+    "astro": "^5.17.1",
+    "kelpui": "^1.17.2"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.8.0",

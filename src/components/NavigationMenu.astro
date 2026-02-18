@@ -1,6 +1,51 @@
----
-import Menu from './Menu/Menu.astro';
----
-<nav aria-label="Primary navigation">
-    <Menu />
+<style>
+    @media (max-width: 768px) {
+        :root {
+            --logo-padding: 1rem;
+        }
+    }
+    .logo {
+        padding-inline-start: var(--logo-padding);
+    }
+</style>
+<nav class="navbar no-wrap">
+	<a class="logo" href="#">IRADA</a>
+	<ul class="show-above-m">
+		<li><a href="/">Home</a></li>
+		<li><a href="/about/">About</a></li>
+		<li><a href="/blog/">Blog</a></li>
+	</ul>
+	<ul class="hide-above-m">
+		<li>
+			<button
+				command="show-modal"
+				commandfor="collapsed-nav"
+				aria-label="Menu"
+                class="plain"
+			>
+				&#x2630;
+			</button>
+		</li>
+	</ul>
 </nav>
+<dialog 
+	id="collapsed-nav" 
+	class="drawer" 
+	closedby="any"
+>
+    <div class="action-header">
+        <h2>Nav Menu</h2>
+        <form method="dialog">
+            <button class="plain" aria-label="Close Modal">
+                ✕
+            </button>
+        </form>
+    </div>
+    <div class="action-body">
+        <ul class="list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/blog/">Blog</a></li>
+        </ul>
+    </div>
+</dialog>

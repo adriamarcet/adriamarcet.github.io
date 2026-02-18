@@ -4,12 +4,6 @@ import Layout from "../layouts/Layout.astro"
 const allPosts = Object.values(import.meta.glob('./posts/**/*.md', { eager: true }));
 
 ---
-<style>
-    .blog-posts-list {
-        list-style: none;
-        padding: 0;
-    }
-</style>
 <Layout pageTitle="Blog">
     <ul class="blog-posts-list">
         {allPosts.map((post: any) => {
