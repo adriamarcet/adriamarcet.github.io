@@ -1,26 +1,25 @@
 ---
-const { frontmatter } = Astro.props;
 import Layout from '../Layout.astro';
 import './styles.css';
 
-const lang = frontmatter.lang || 'es';
+const lang = Astro.props.lang || 'es';
 import Date from '../../components/Date.astro';
 ---
 <Layout lang={lang} bodyClass="blog-post">
     <article>
         <header>
-            <h1>{frontmatter.title}</h1>
+            <h1>{Astro.props.pageTitle}</h1>
         </header>
         <div class="blog-post-main">
             <div class="container-m no-margin">
                 <slot />
                 <div class="flex direction-column">
-                    <Date date={frontmatter.pubDate} lang={lang} />
-                    {frontmatter.tags && frontmatter.tags.length > 0 && (
+                    <Date date={Astro.props.date} lang={lang} />
+                    {Astro.props.tags && Astro.props.tags.length > 0 && (
                         <span class="blog-post-tags size-xs">
-                            Etiquetes: {frontmatter.tags.map((tag: string, index: number) => (
+                            Etiquetes: {Astro.props.tags.map((tag: string, index: number) => (
                                 <a key={tag} href={`/tags/${tag}`}>
-                                    {tag}{index < frontmatter.tags.length - 1 ? ' – ' : ''}
+                                    {tag}{index < Astro.props.tags.length - 1 ? ' – ' : ''}
                                 </a>
                             ))}
                         </span>

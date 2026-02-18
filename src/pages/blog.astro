@@ -1,21 +1,21 @@
 ---
+import { getCollection } from "astro:content";
 import BlogPost from "../components/BlogPost/BlogPost.astro";
 import Layout from "../layouts/Layout.astro"
-const allPosts = Object.values(import.meta.glob('./posts/**/*.md', { eager: true }));
-
+// const allPosts = Object.values(import.meta.glob('./posts/**/*.md', { eager: true }));
+const allPosts = await getCollection("blog");
 ---
 <Layout pageTitle="Blog">
     <ul class="stack list-unstyled">
         {allPosts.map((post: any) => {
-            const { frontmatter } = post;
             return (
                 <li class="blog-post-list-item">
                     <BlogPost 
-                        postUrl={post.url} 
-                        pageTitle={frontmatter.title} 
-                        date={frontmatter.pubDate} 
-                        preview={frontmatter.description} 
-                        lang={frontmatter.lang} 
+                        postUrl={`/posts/${post.id}`}
+                        pageTitle={post.data.title} 
+                        date={post.data.pubDate} 
+                        preview={post.data.description} 
+                        lang={post.data.lang} 
                     />
                 </li>
             )

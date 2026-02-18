@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost/BlogPost.astro
 lang: 'ca'
 title: 'Crear alguna cosa desde zero'
 pubDate: 2026-02-11
