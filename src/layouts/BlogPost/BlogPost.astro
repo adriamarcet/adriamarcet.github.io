@@ -9,15 +9,27 @@ import Date from '../../components/Date.astro';
 <Layout lang={lang} bodyClass="blog-post">
     <article>
         <header>
-            <div>
-                <Date date={frontmatter.pubDate} lang={lang} />
-            </div>
             <h1>{frontmatter.title}</h1>
         </header>
         <div class="blog-post-main">
-            <div class="reader">
+            <div class="container-m no-margin">
                 <slot />
+                <div class="flex direction-column">
+                    <Date date={frontmatter.pubDate} lang={lang} />
+                    {frontmatter.tags && frontmatter.tags.length > 0 && (
+                        <span class="blog-post-tags size-xs">
+                            Etiquetes: {frontmatter.tags.map((tag: string, index: number) => (
+                                <a key={tag} href={`/tags/${tag}`}>
+                                    {tag}{index < frontmatter.tags.length - 1 ? ' – ' : ''}
+                                </a>
+                            ))}
+                        </span>
+                    )}
+                </div>
             </div>
+        </div>
+        <div class="padding-l flex justify-end">
+            <a href="/blog">· Tornar a Blog</a>
         </div>
     </article>
 </Layout>

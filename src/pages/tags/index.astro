@@ -4,10 +4,10 @@ import Layout from '../../layouts/Layout.astro';
 const allPosts = Object.values(import.meta.glob('../posts/*.md', { eager: true }));
 const tags = [...new Set(allPosts.flatMap((post: any) => post.frontmatter?.tags ?? []))];
 ---
-<Layout pageTitle="Tags">
-    <ul>
-        {tags.map((tag) => (
-            <li key={tag}>
+<Layout pageTitle="Totes les etiquetes">
+    <ul class="cluster list-unstyled">
+        {tags.sort().map((tag) => (
+            <li class="callout" key={tag}>
                 <a href={`/tags/${tag}`}>{tag}</a>
             </li>
         ))}

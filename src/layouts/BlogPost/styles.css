@@ -10,14 +10,14 @@
     color: var(--dark-slate);
     border-radius: 1rem;
     border: 1px solid transparent;
-    padding: 1.25rem 1.5rem;
+    padding: 2em 2em 3.5em;
 }
 .blog-post h1 {
     margin-top: -0.35rem;
 }
+.blog-post-tags,
 .blog-post time {
     color: var(--dark-goldenrod);
-    /* color: var(--dark-slate); */
     font-size: small;
     max-width: 80ch;
     text-transform: uppercase;

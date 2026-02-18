@@ -18,9 +18,9 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
-<BaseLayout pageTitle={tag}>
-  <p>Posts tagged with {tag}</p>
-    <ul class="blog-posts-list">
+<BaseLayout pageTitle={`Etiqueta: ${tag}`}>
+  <p>Mostrant el contingut etiquetat amb <em>{tag}</em></p>
+    <ul class="stack list-unstyled">
         {posts.map((post: any) => (
             <li key={post.url} class="blog-post-list-item">
                 <BlogPost 
@@ -33,4 +33,7 @@ const { posts } = Astro.props;
             </li>
         ))}
     </ul>
+    <div class="padding-l flex justify-end">
+        <a href="./">· Tornar a totes les etiquetes</a>
+    </div>
 </BaseLayout>

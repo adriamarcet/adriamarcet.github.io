@@ -8,3 +8,4 @@ main {
   max-width: min(100%,1050px);
   margin-inline: auto;
 }
+.no-margin { margin: 0; }

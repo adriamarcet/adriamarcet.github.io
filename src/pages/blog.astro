@@ -5,7 +5,7 @@ const allPosts = Object.values(import.meta.glob('./posts/**/*.md', { eager: true
 
 ---
 <Layout pageTitle="Blog">
-    <ul class="blog-posts-list">
+    <ul class="stack list-unstyled">
         {allPosts.map((post: any) => {
             const { frontmatter } = post;
             return (

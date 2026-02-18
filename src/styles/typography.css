@@ -1,18 +1,10 @@
 @layer typography {
   :root {
-    --font-family: 'Playfair Display Variable', system-ui, serif;
-    --font-family-body: 'Inter Variable', system-ui, sans-serif;
-  }
-
-  html {
-    font-family: sans-serif;
-  }
-  .front-end p {
-    font-family: var(--font-family-body);
+    --font-secondary: 'Playfair Display Variable', system-ui, serif;
+    --font-primary: 'Inter Variable', system-ui, sans-serif;
   }
   .front-end h1,
   .front-end h2 {
-    font-family: var(--font-family);
     margin: 0 0 1.5rem 0;
   }
   .front-end a {
