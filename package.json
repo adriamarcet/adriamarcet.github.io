@@ -11,10 +11,13 @@
     "postinstall": "cp node_modules/kelpui/js/dark-mode-auto.js public/dark-mode-auto.js"
   },
   "dependencies": {
+    "@astrojs/preact": "^4.1.3",
+    "@astrojs/rss": "^4.0.15",
     "@fontsource-variable/playfair-display": "^5.2.8",
     "@fontsource/inter": "^5.2.8",
     "astro": "^5.17.1",
-    "kelpui": "^1.17.2"
+    "kelpui": "^1.17.2",
+    "preact": "^10.28.3"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.8.0",
