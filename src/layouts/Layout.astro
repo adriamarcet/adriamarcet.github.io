@@ -16,7 +16,7 @@ const {pageTitle, lang = 'es', bodyClass = ''} = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<script src="/dark-mode-auto.js" async is:inline></script>
+		<script src="/dark-mode-auto.js" is:inline></script>
 		<title>{pageTitle}</title>
 	</head>
 	<body class={`front-end ${bodyClass}`}>
