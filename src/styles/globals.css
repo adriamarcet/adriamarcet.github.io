@@ -2,10 +2,7 @@ main {
   min-height: 100svh;
 }
 .reader {
-  max-width: 68ch;
-}
-.content {
-  max-width: min(100%,1050px);
-  margin-inline: auto;
+  max-width: 55ch;
 }
 .no-margin { margin: 0; }
+.container { max-width: min(100%,1050px)}

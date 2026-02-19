@@ -11,7 +11,7 @@ import Date from '../../components/Date.astro';
             <h1>{Astro.props.pageTitle}</h1>
         </header>
         <div class="blog-post-main">
-            <div class="container-m no-margin">
+            <div class="container-m no-margin reader">
                 <slot />
                 <div class="flex direction-column">
                     <Date date={Astro.props.date} lang={lang} />

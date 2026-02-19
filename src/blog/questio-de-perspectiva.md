@@ -1,7 +1,7 @@
 ---
 lang: 'ca'
 title: 'Qüestió de perspectiva'
-pubDate: 2026-02-11
+pubDate: 2026-02-18
 description: "Avui la meva filla Theia ha llençat el seu abri al terra mentre ella estava asseguda al cotxet. Ràpidament l'he recollit i li he llençat desde dalt. Per l'experssió que ha fet i el moviment de cap, a dalt i a baix, crec que li ha semblat que"
 author: 'Irada'
 image:

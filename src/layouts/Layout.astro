@@ -12,7 +12,7 @@ const {pageTitle, lang = 'es', bodyClass = ''} = Astro.props;
 <html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
@@ -20,8 +20,8 @@ const {pageTitle, lang = 'es', bodyClass = ''} = Astro.props;
 		<title>{pageTitle}</title>
 	</head>
 	<body class={`front-end ${bodyClass}`}>
-		<main class="content">
-			<NavigationMenu />
+		<NavigationMenu />
+		<main class="container">
 			{pageTitle && <h1>{pageTitle}</h1>}
 			<slot />
 		</main>
