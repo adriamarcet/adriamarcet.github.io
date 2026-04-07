@@ -7,17 +7,18 @@ export async function getStaticPaths() {
     const allPosts = await getCollection("blog");
     const uniqueTags = [...new Set(allPosts.map((post: any) => post.data.tags).flat())];
 
-    return uniqueTags.map((tag: string) => {
-        const filteredPosts = allPosts.filter((post: any) => post.data.tags.includes(tag));
-        return {
-            params: { tag },
-            props: { posts: filteredPosts }
-        };
-    });
+    return uniqueTags.map((tag: string) => ({
+        params: { tag }
+    }));
 }
 
 const { tag } = Astro.params;
-const { posts } = Astro.props;
+const allPosts = await getCollection("blog");
+const posts = allPosts
+    .filter((post: any) => post.data.tags.includes(tag))
+    .sort((a: any, b: any) =>
+        new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+    );
 ---
 <BaseLayout pageTitle={`Etiqueta: ${tag}`}>
   <p>Mostrant el contingut etiquetat amb <em>{tag}</em></p>
