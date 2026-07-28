@@ -12,7 +12,7 @@ tags: ["a11y"]
 
 M'ha agradat molt [la publicació d'en Nat Tarnoff](https://tarnoff.info/2026/07/27/a11y-101-3-3-3-error-suggestion/) i comento una mica el que em sembla més destacat d'ella. 
 
-Quan hagis de posar un missatge d'error a la pantalla d'un/a usuari/ària intenta ensenyar el camí per arreglar-lo. "Invalid" és una porta tancada, "Email invàlid: el email que has facilitat no és correcte, prova amb un altre afegint un domini correcte. Per exemple: nomusuari@exemple.com."
+Quan hagis de posar un missatge d'error a la pantalla d'un/a usuari/ària intenta ensenyar el camí per arreglar-lo. "Invalid" és una porta tancada. Podem aprofitar el missatge per guiar a les persones cap a la solució de l'error: "Email invàlid: el email que has facilitat no és correcte, prova amb un altre afegint un domini correcte. Per exemple: nomusuari@exemple.com."
 
 En els missatges d'error pots indicar:
 * Problemes de format. Per exemple: El número de telèfon ha de tindre 9 xifres, prova amb algun número semblant a aquest: 654321987.
